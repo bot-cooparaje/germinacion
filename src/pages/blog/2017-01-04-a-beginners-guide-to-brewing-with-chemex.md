@@ -2,9 +2,9 @@
 templateKey: blog-post
 title: Una guia para hacer un buen tinto
 date: 2017-01-04T15:04:10.000Z
-description: Brewing with a Chemex probably seems like a complicated,
-  time-consuming ordeal, but once you get used to the process, it becomes a
-  soothing ritual that's worth the effort every time.
+description: Hacer un tinto tiene que ver con el aprender a perderse, por la
+  inmersión en la taza, el anillo que se disuelve hasta el borde sin llegar a
+  invadirlo completamente.
 featuredpost: false
 featuredimage: /img/1d554ab47260d38a544efbee112afa0d.jpg
 tags:
