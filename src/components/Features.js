@@ -7,17 +7,17 @@ const FeatureGrid = ({ gridItems }) => (
     {gridItems.map((item) => (
       <div key={item.text} className="p-3 bg-gray-100 shadow-lg">
         <section className="section">
-          <div className="has-text-centered">
+          <div className="flex items-center justify-center p-12 opacity-40">
             <div
               style={{
-                width: '240px',
+                width: '140px',
                 display: 'inline-block',
               }}
             >
               <PreviewCompatibleImage imageInfo={item} />
             </div>
           </div>
-          <p>{item.text}</p>
+          <p className="font-sans text-base font-bold">{item.text}</p>
         </section>
       </div>
     ))}

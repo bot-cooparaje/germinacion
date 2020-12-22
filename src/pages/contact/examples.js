@@ -6,7 +6,7 @@ export default class Index extends React.Component {
   render() {
     return (
       <Layout>
-        <section className="prose section lg:prose-xl">
+        <section className="max-w-4xl mx-auto mt-12 prose section lg:prose-xl">
           <div className="container">
             <div className="content">
               <h1>Hi people</h1>

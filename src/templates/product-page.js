@@ -1,11 +1,11 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
-import Features from '../components/Features'
-import Testimonials from '../components/Testimonials'
-import Pricing from '../components/Pricing'
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import React from "react";
+import PropTypes from "prop-types";
+import { graphql } from "gatsby";
+import Layout from "../components/Layout";
+import Features from "../components/Features";
+import Testimonials from "../components/Testimonials";
+import Pricing from "../components/Pricing";
+import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
 export const ProductPageTemplate = ({
   image,
@@ -20,61 +20,49 @@ export const ProductPageTemplate = ({
 }) => (
   <div className="content">
     <div
-      className="full-width-image-container margin-top-0"
+      className="mt-0 full-width-image-container"
       style={{
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
       }}
     >
-      <h2
-        className="has-text-weight-bold is-size-1"
-        style={{
-          boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-          backgroundColor: '#f40',
-          color: 'white',
-          padding: '1rem',
-        }}
-      >
-        {title}
-      </h2>
+      <h2 className="max-w-4xl py-64 mx-auto text-6xl text-white">{title}</h2>
     </div>
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="section">
-          <div className="columns">
-            <div className="column is-7 is-offset-1">
-              <h3 className="text-red-400 has-text-weight-semibold is-size-2">{heading}</h3>
-              <p>{description}</p>
+    <section className="">
+      <div className="">
+        <div className="">
+          <div className="flex flex-col items-center justify-center h-64">
+            <div className="w-full max-w-4xl mx-auto">
+              <h3 className="mb-6 text-3xl">{heading}</h3>
+              <p className="text-xl">{description}</p>
             </div>
           </div>
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
+          <div className="max-w-6xl mx-auto ">
+            <div className="">
               <Features gridItems={intro.blurbs} />
-              <div className="columns">
-                <div className="column is-7">
-                  <h3 className="has-text-weight-semibold is-size-3">
-                    {main.heading}
-                  </h3>
+              <div className="">
+                <div className="">
+                  <h3 className="">{main.heading}</h3>
                   <p>{main.description}</p>
                 </div>
               </div>
-              <div className="tile is-ancestor">
-                <div className="tile is-vertical">
-                  <div className="tile">
-                    <div className="tile is-parent is-vertical">
-                      <article className="tile is-child">
+              <div className="">
+                <div className="">
+                  <div className="">
+                    <div className="">
+                      <article className="">
                         <PreviewCompatibleImage imageInfo={main.image1} />
                       </article>
                     </div>
-                    <div className="tile is-parent">
-                      <article className="tile is-child">
+                    <div className="">
+                      <article className="">
                         <PreviewCompatibleImage imageInfo={main.image2} />
                       </article>
                     </div>
                   </div>
-                  <div className="tile is-parent">
-                    <article className="tile is-child">
+                  <div className="">
+                    <article className="">
                       <PreviewCompatibleImage imageInfo={main.image3} />
                     </article>
                   </div>
@@ -91,10 +79,8 @@ export const ProductPageTemplate = ({
                   })`,
                 }}
               />
-              <h2 className="has-text-weight-semibold is-size-2">
-                {pricing.heading}
-              </h2>
-              <p className="is-size-5">{pricing.description}</p>
+              <h2 className="">{pricing.heading}</h2>
+              <p className="">{pricing.description}</p>
               <Pricing data={pricing.plans} />
             </div>
           </div>
@@ -102,7 +88,7 @@ export const ProductPageTemplate = ({
       </div>
     </section>
   </div>
-)
+);
 
 ProductPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -126,10 +112,10 @@ ProductPageTemplate.propTypes = {
     description: PropTypes.string,
     plans: PropTypes.array,
   }),
-}
+};
 
 const ProductPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+  const { frontmatter } = data.markdownRemark;
 
   return (
     <Layout>
@@ -145,8 +131,8 @@ const ProductPage = ({ data }) => {
         pricing={frontmatter.pricing}
       />
     </Layout>
-  )
-}
+  );
+};
 
 ProductPage.propTypes = {
   data: PropTypes.shape({
@@ -154,9 +140,9 @@ ProductPage.propTypes = {
       frontmatter: PropTypes.object,
     }),
   }),
-}
+};
 
-export default ProductPage
+export default ProductPage;
 
 export const productPageQuery = graphql`
   query ProductPage($id: String!) {
@@ -244,4 +230,4 @@ export const productPageQuery = graphql`
       }
     }
   }
-`
+`;

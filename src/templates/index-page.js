@@ -15,9 +15,9 @@ export const IndexPageTemplate = ({
   description,
   intro,
 }) => (
-  <div>
+  <div >
     <div
-      className="w-full p-8"
+      className="flex flex-col items-center justify-center w-full h-screen p-8 text-center"
       style={{
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
@@ -31,7 +31,7 @@ export const IndexPageTemplate = ({
         <h3 className="font-sans text-4xl text-white">{subheading}</h3>
       </div>
     </div>
-    <section className="section section--gradient">
+    <section className="max-w-6xl mx-auto">
       <div className="container">
         <div className="section">
           <div className="columns">
@@ -66,9 +66,9 @@ export const IndexPageTemplate = ({
                     Latest stories
                   </h3>
                   <BlogRoll />
-                  <div className="column is-12 has-text-centered">
+                  <div className="flex items-center justify-center h-64 bg-gray-200">
                     <Link className="btn" to="/blog">
-                      Read more
+                      Leer todas
                     </Link>
                   </div>
                 </div>

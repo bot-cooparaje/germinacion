@@ -8,11 +8,11 @@ export default class BlogIndexPage extends React.Component {
     return (
       <Layout>
         <div className="block p-12 bg-gray-200">
-          <h1 className="font-mono text-gray-900">
+          <h1 className="font-mono text-center text-gray-900">
             Latest Stories
           </h1>
         </div>
-        <section className="section">
+        <section className="max-w-6xl mx-auto section">
           <div className="container">
             <div className="content">
               <BlogRoll />
