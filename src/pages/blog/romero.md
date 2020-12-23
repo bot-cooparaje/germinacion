@@ -23,6 +23,12 @@ tags:
   - hepatobiliares
   - hipertensoras
 ---
+**Parte usada: Hojas y flores**
+
+![romero](/img/romero.jpg "romero")
+
+
+
 ### para qué problema se usa
 
 #### uso externo
