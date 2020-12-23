@@ -105,5 +105,5 @@ export default () => (
 );
 
 const Container = styled.div`
-  ${tw`grid grid-cols-3 gap-6 my-12 `}
+  ${tw`grid gap-6 my-12 md:grid-cols-3 `}
 `

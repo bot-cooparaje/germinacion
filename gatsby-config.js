@@ -61,9 +61,9 @@ const queries = [
 
 module.exports = {
   siteMetadata: {
-    title: "Gatsby + Netlify CMS Starter",
+    title: "GermiNación",
     description:
-      "This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.",
+      "Se trata aquí de enumerar una serie de afecciones comunes, cuya resolución puede ser acompañada del uso de plantas para la salud.",
   },
   plugins: [
     "gatsby-plugin-react-helmet",

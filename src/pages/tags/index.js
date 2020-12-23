@@ -22,7 +22,7 @@ const TagsPage = ({
             style={{ marginBottom: '6rem' }}
           >
             <h1 className="mb-6 text-3xl">Virtudes</h1>
-            <ul className="grid grid-cols-4 gap-3 taglist">
+            <ul className="grid gap-3 sm:grid-cols-2 md:grid-cols-4 taglist">
               {group.map((tag) => (
                 <li key={tag.fieldValue} >
                   <Link className="text-xl text-green-500 capitalize hover:underline" to={`/tags/${kebabCase(tag.fieldValue)}/`}>
