@@ -21,6 +21,12 @@ tags:
   - hepatobiliares
   - inmunoestimulantes
 ---
+**Parte usada: Flores, hojas, tallos**
+
+
+
+![tomillo](/img/tomillo.jpg "tomillo")
+
 ### para qué problema se usa
 
 #### uso externo
