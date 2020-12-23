@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: "Manzanilla"
+title: Manzanilla
 date: 2020-12-23T14:01:09.153Z
 description: Familia de las Asteráceas (ex Compuestas) Hierba anual con hojas
   finamente divididas, flores del margen blancas liguladas y centrales amarillas
@@ -13,7 +13,6 @@ tags:
   - antiespasmodica
   - antiflatulentas
   - antiinflamatorias
-  - protectores gastricos
 ---
 ### Para qué problema se usa
 
