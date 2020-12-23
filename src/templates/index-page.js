@@ -17,7 +17,7 @@ export const IndexPageTemplate = ({
 }) => (
   <div >
     <div
-      className="flex flex-col items-center justify-center w-full h-screen p-8 text-center"
+      className="flex flex-col items-center justify-center w-full p-8 py-64 text-center"
       style={{
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
@@ -27,8 +27,8 @@ export const IndexPageTemplate = ({
       }}
     >
       <div className="max-w-lg">
-        <h1 className="font-mono text-6xl text-white ">{title}</h1>
-        <h3 className="mt-2 font-serif text-4xl text-white">{subheading}</h3>
+        <h1 className="font-mono text-6xl text-green-500 ">{title}</h1>
+        <h3 className="mt-2 font-serif text-4xl text-green-500">{subheading}</h3>
       </div>
     </div>
     <section className="max-w-6xl mx-auto">
@@ -37,7 +37,7 @@ export const IndexPageTemplate = ({
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
-                <div className="content">
+                <div className=" content">
                   <div className="tile">
                     <h1 className="py-12 text-3xl text-center">{mainpitch.title}</h1>
                   </div>
@@ -45,7 +45,7 @@ export const IndexPageTemplate = ({
                     <h3 className="max-w-xl py-12 mx-auto text-xl text-center">{mainpitch.description}</h3>
                   </div>
                 </div>
-                <div className="columns">
+                <div className="hidden columns">
                   <div className="column is-12">
                     <h3 className="py-12 text-3xl text-center has-text-weight-semibold is-size-2">
                       {heading}
@@ -53,7 +53,7 @@ export const IndexPageTemplate = ({
                     <p className="max-w-xl py-12 mx-auto text-xl text-center">{description}</p>
                   </div>
                 </div>
-                <Features gridItems={intro.blurbs} />
+                {/*<Features gridItems={intro.blurbs} />*/}
                 <div className="hidden columns">
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/products">
@@ -63,7 +63,7 @@ export const IndexPageTemplate = ({
                 </div>
                 <div className="column is-12">
                   <h3 className="py-12 text-3xl text-center">
-                    Latest stories
+                    Guia de plantas
                   </h3>
                   <BlogRoll />
                   <div className="flex items-center justify-center h-64 bg-gray-200">

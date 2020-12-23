@@ -9,7 +9,7 @@ export default class BlogIndexPage extends React.Component {
       <Layout>
         <div className="block p-12 bg-gray-200">
           <h1 className="font-mono text-4xl text-center text-gray-900">
-            Latest Stories
+          Guia de plantas
           </h1>
         </div>
         <section className="max-w-6xl mx-auto section">
