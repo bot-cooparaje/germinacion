@@ -17,6 +17,8 @@ tags:
 ---
 **Parte usada: Hojas, Corteza verde de las ramas finas, de 3 años, cortadas al comenzar la primavera preferentemente, y la Corteza dura leñosa**
 
+![sauce](/img/sauce.jpg "sauce")
+
 ### para qué problema se usa
 
 #### uso externo
