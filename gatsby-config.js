@@ -1,13 +1,11 @@
-
-
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
-})
+});
 
-const striptags = require("striptags")
+const striptags = require("striptags");
 
 // gatsby-config.js
-const blogQuery  = `  {
+const blogQuery = `  {
   allMarkdownRemark {
     nodes {
       objectID: id
@@ -35,32 +33,33 @@ const queries = [
 
         const pChunks = striptags(post.html, [], "XXX_SPLIT_HERE_XXX").split(
           "XXX_SPLIT_HERE_XXX"
-        )
+        );
 
-        const chunks = pChunks.map(chnk => ({
+        const chunks = pChunks.map((chnk) => ({
           slug: post.fields.slug,
           title: post.frontmatter.title,
+          image: post.frontmatter.featuredimage,
           excerpt: chnk,
-        }))
+        }));
 
         if (post.frontmatter.description) {
           chunks.push({
             slug: post.fields.slug,
             title: post.frontmatter.title,
             excerpt: post.frontmatter.description,
-          })
+            image: post.frontmatter.featuredimage,
+          });
         }
 
-        const filtered = chunks.filter(chnk => !!chnk.excerpt)
+        const filtered = chunks.filter((chnk) => !!chnk.excerpt);
 
-        return [...indices, ...filtered]
-      }, [])
+        return [...indices, ...filtered];
+      }, []);
     },
   },
-]
+];
 
 module.exports = {
-
   siteMetadata: {
     title: "Gatsby + Netlify CMS Starter",
     description:
