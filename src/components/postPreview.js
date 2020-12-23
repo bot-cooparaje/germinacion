@@ -29,20 +29,15 @@ const PostPreview = ({ hit }) => {
 export default PostPreview
 
 const SearchItem = styled.div`
-  ${tw`flex text-green-100 bg-green-800`}
+  ${tw`flex px-6 py-3 text-gray-900 bg-green-100`}
 
-
-
-  body.dark & {
-    ${tw`text-green-100 bg-green-800`}
-  }
 
   a {
-    ${tw`font-sans text-xl font-bold text-green-200`}
+    ${tw`font-sans text-xl font-bold text-gray-900`}
   }
 
   p {
-    ${tw`font-sans text-base`}
+    ${tw`font-sans text-xl`}
   }
 `
 

@@ -69,7 +69,7 @@ export const IndexPageTemplate = ({
                   </div>
                 </div>
                 <div className="column is-12">
-                  <h3 className="py-12 text-6xl font-bold text-center">
+                  <h3 className="py-12 text-6xl font-bold text-center opacity-20">
                     Guía de plantas
                   </h3>
                   <BlogRoll />

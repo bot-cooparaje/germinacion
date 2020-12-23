@@ -16,23 +16,23 @@ class BlogRoll extends React.Component {
           posts.map(({ node: post }) => (
             <div key={post.id}>
               <article
-                className={`blog-list-item tile border-b  is-child box notification ${
+                className={`blog-list-item tile shadow-xl py-3  is-child box notification ${
                   post.frontmatter.featuredpost ? "is-featured" : ""
                 }`}
               >
                 <header>
                   {post.frontmatter.featuredimage ? (
-                    <div className="relative w-full h-64 overflow-hidden featured-thumbnail">
+                    <Link to={post.fields.slug} className="relative block w-full h-40 overflow-hidden featured-thumbnail">
                       <PreviewCompatibleImage
                         imageInfo={{
                           image: post.frontmatter.featuredimage,
                           alt: `featured image thumbnail for post ${post.frontmatter.title}`,
                         }}
                       />
-                    </div>
+                    </Link>
                   ) : null}
-                  <p className="my-2 prose text-center post-meta">
-                    <Link className="font-sans text-3xl font-bold " to={post.fields.slug}>
+                  <p className="my-2 text-center post-meta">
+                    <Link className="font-sans text-3xl font-black text-green-500 hover:underline " to={post.fields.slug}>
                       {post.frontmatter.title}
                     </Link>
                     <span> &bull; </span>
@@ -106,5 +106,5 @@ export default () => (
 );
 
 const Container = styled.div`
-  ${tw`grid gap-6 my-12 md:grid-cols-3 `}
+  ${tw`grid gap-6 my-12 md:grid-cols-5 `}
 `
