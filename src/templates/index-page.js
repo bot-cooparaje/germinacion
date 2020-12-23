@@ -26,9 +26,9 @@ export const IndexPageTemplate = ({
         backgroundAttachment: `fixed`,
       }}
     >
-      <div>
-        <h1 className="font-sans text-6xl text-white">{title}</h1>
-        <h3 className="font-sans text-4xl text-white">{subheading}</h3>
+      <div className="max-w-lg">
+        <h1 className="font-mono text-6xl text-white ">{title}</h1>
+        <h3 className="mt-2 font-serif text-4xl text-white">{subheading}</h3>
       </div>
     </div>
     <section className="max-w-6xl mx-auto">

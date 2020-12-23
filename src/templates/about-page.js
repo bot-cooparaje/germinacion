@@ -9,11 +9,11 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 
   return (
     <section className="max-w-2xl mx-auto">
-      <div className="container">
-        <div className="columns">
-          <div className="prose lg:prose-xl column is-10 is-offset-1">
+      <div className="">
+        <div className="">
+          <div className="prose lg:prose-xl">
             <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+              <h2 className="font-mono">
                 {title}
               </h2>
               <PageContent className="content" content={content} />

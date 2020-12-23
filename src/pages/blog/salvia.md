@@ -11,8 +11,9 @@ featuredpost: true
 featuredimage: /img/salvia.jpg
 tags:
   - acción endocrina
-  - antibiotica - antibacteriana
-  - antiespasmodicas
+  - antibiotica
+  - antibacteriana
+  - antiespasmodica
   - antitraspirante
   - antivirales
   - hepatobiliares

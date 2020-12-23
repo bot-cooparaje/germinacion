@@ -6,8 +6,10 @@
   "dependencies": {
     "@tailwindcss/typography": "^0.3.1",
     "autoprefixer": "^10.1.0",
-    "bulma": "^0.9.0",
     "gatsby": "^2.20.35",
+    "fontsource-fruktur": "^3.1.5",
+    "fontsource-merriweather": "^3.1.5",
+    "fontsource-merriweather-sans": "^3.1.6",
     "gatsby-image": "^2.3.5",
     "gatsby-plugin-emotion": "^4.3.14",
     "gatsby-plugin-netlify": "^2.2.4",
@@ -50,8 +52,8 @@
   "main": "n/a",
   "scripts": {
     "clean": "gatsby clean",
+    "build": "gatsby build",
     "start": "npm run develop",
-    "build": "npm run clean && gatsby build",
     "develop": "npm run clean && gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
     "test": "echo \"Error: no test specified\" && exit 1"

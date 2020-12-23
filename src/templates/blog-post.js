@@ -22,7 +22,7 @@ export const BlogPostTemplate = ({
       <div className="container max-w-2xl mx-auto content">
         <div className="mt-12">
           <div className="prose md:prose-xl column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+            <h1 className="font-mono text-4xl">
               {title}
             </h1>
             <p>{description}</p>

@@ -15,13 +15,14 @@ locale: "es"
 publish_mode: editorial_workflow
 media_folder: static/img
 public_folder: /img
+show_preview_links: false
 
 collections:
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     fields:
       - {
           label: "Template Key",

@@ -2,6 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql, StaticQuery } from "gatsby";
 import PreviewCompatibleImage from "./PreviewCompatibleImage";
+import styled from "@emotion/styled"
+import tw from "twin.macro"
 
 class BlogRoll extends React.Component {
   render() {
@@ -9,7 +11,7 @@ class BlogRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark;
 
     return (
-      <div className="grid grid-cols-3 gap-6 my-12">
+      <Container>
         {posts &&
           posts.map(({ node: post }) => (
             <div key={post.id}>
@@ -35,22 +37,23 @@ class BlogRoll extends React.Component {
                     </Link>
                     <span> &bull; </span>
                   </p>
-                  <span className="subtitle is-size-5 is-block">
+                  <span className="hidden">
                     {post.frontmatter.date}
                   </span>
                 </header>
-                <p className="prose">
+                <p className="mb-3 prose">
                   {post.excerpt}
-                  <br />
                   <br />
                   <Link className="button" to={post.fields.slug}>
                     Seguir leyendo →
                   </Link>
+                  <br />
+
                 </p>
               </article>
             </div>
           ))}
-      </div>
+      </Container>
     );
   }
 }
@@ -70,7 +73,7 @@ export default () => (
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
           filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
-          limit: 3
+          limit: 6
         ) {
           edges {
             node {
@@ -100,3 +103,7 @@ export default () => (
     render={(data, count) => <BlogRoll data={data} count={count} />}
   />
 );
+
+const Container = styled.div`
+  ${tw`grid grid-cols-3 gap-6 my-12 `}
+`

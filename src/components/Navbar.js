@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-
+import logo from '../img/logo.svg'
 const Navbar = class extends React.Component {
   constructor(props) {
     super(props)
@@ -39,8 +39,9 @@ const Navbar = class extends React.Component {
       >
         <div className="flex max-w-6xl mx-auto">
           <div className="flex items-center justify-center">
-            <Link to="/" className="text-3xl" title="Logo">
-              Germinación
+            <Link to="/" className="flex items-center " title="Logo">
+              <img src={logo} alt="Kaldi" style={{ width: '50px' }} />
+              <span className="ml-2 text-2xl font-bold tracking-wide text-green-600">Germinación</span>
             </Link>
             {/* Hamburger menu */}
             <div
@@ -62,22 +63,15 @@ const Navbar = class extends React.Component {
           >
             <div className="flex justify-end flex-1 w-full">
               <Link className="mr-4 text-xl" to="/about">
-                About
+                Sobre nosotres
               </Link>
-              <Link className="mr-4 text-xl" to="/products">
-                Products
+              <Link className="mr-4 text-xl" to="/tags">
+                Virtudes
               </Link>
               <Link className="mr-4 text-xl" to="/blog">
-                Blog
-              </Link>
-              <Link className="mr-4 text-xl" to="/contact">
-                Contact
-              </Link>
-              <Link className="mr-4 text-xl" to="/contact/examples">
-                Form Examples
+              Plantas
               </Link>
             </div>
-            
           </div>
         </div>
       </nav>

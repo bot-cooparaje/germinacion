@@ -10,7 +10,9 @@ featuredpost: true
 featuredimage: /img/tomillo.jpg
 tags:
   - tónicas
-  - antibiótica - antibacteriana  antiespasmódicas
+  - antibiótica
+  - antibacteriana
+  - antiespasmódicas
   - antiflatulentas
   - antimicótica
   - antiparasitaria
