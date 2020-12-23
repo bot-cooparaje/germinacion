@@ -1,4 +1,4 @@
-import 'fontsource-fruktur'
-import 'fontsource-merriweather'
-import 'fontsource-merriweather-sans'
+import 'fontsource-alegreya'
+import 'fontsource-alegreya-sans-sc'
+import 'fontsource-alegreya-sans'
 require("./src/styles/globals.css")

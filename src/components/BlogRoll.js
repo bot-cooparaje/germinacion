@@ -22,7 +22,7 @@ class BlogRoll extends React.Component {
               >
                 <header>
                   {post.frontmatter.featuredimage ? (
-                    <div className="relative w-full h-48 overflow-hidden featured-thumbnail">
+                    <div className="relative w-full h-64 overflow-hidden featured-thumbnail">
                       <PreviewCompatibleImage
                         imageInfo={{
                           image: post.frontmatter.featuredimage,
@@ -31,8 +31,8 @@ class BlogRoll extends React.Component {
                       />
                     </div>
                   ) : null}
-                  <p className="mb-2 prose post-meta">
-                    <Link className="text-xl" to={post.fields.slug}>
+                  <p className="my-2 prose text-center post-meta">
+                    <Link className="font-sans text-3xl font-bold " to={post.fields.slug}>
                       {post.frontmatter.title}
                     </Link>
                     <span> &bull; </span>
@@ -41,8 +41,8 @@ class BlogRoll extends React.Component {
                     {post.frontmatter.date}
                   </span>
                 </header>
-                <p className="mb-3 prose">
-                  {post.excerpt}
+                <p className="hidden mb-3 font-serif text-lg font-bold prose">
+                  {post.frontmatter.description}
                   <br />
                   <Link className="button" to={post.fields.slug}>
                     Seguir leyendo →
@@ -73,11 +73,11 @@ export default () => (
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
           filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
-          limit: 6
         ) {
           edges {
             node {
               excerpt(pruneLength: 80)
+              
               id
               fields {
                 slug
@@ -85,6 +85,7 @@ export default () => (
               frontmatter {
                 title
                 templateKey
+                description
                 date(formatString: "MMMM DD, YYYY")
                 featuredpost
                 featuredimage {

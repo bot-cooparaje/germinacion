@@ -15,20 +15,33 @@ export const IndexPageTemplate = ({
   description,
   intro,
 }) => (
-  <div >
+  <div>
     <div
-      className="flex flex-col items-center justify-center w-full p-8 py-64 text-center"
+      className="flex flex-col items-center justify-center w-full p-8 py-32 text-center border-b-2 border-green-400"
       style={{
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
         backgroundPosition: `top left`,
         backgroundAttachment: `fixed`,
+        backgroundSize: `contain`,
       }}
     >
-      <div className="max-w-lg">
-        <h1 className="font-mono text-6xl text-green-500 ">{title}</h1>
-        <h3 className="mt-2 font-serif text-4xl text-green-500">{subheading}</h3>
+      <div className="max-w-5xl">
+        <h1 className="font-serif text-6xl font-bold text-green-500 ">
+          {title}
+        </h1>
+        <h3 className="mt-2 font-serif text-4xl text-green-500">
+          {subheading}
+        </h3>
+        <div className="tile">
+          <h4 className="hidden py-12 text-3xl text-center">{mainpitch.title}</h4>
+        </div>
+        <div className="tile">
+          <h3 className="max-w-xl py-12 mx-auto text-xl text-center">
+            {mainpitch.description}
+          </h3>
+        </div>
       </div>
     </div>
     <section className="max-w-6xl mx-auto">
@@ -37,20 +50,14 @@ export const IndexPageTemplate = ({
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
-                <div className=" content">
-                  <div className="tile">
-                    <h1 className="py-12 text-3xl text-center">{mainpitch.title}</h1>
-                  </div>
-                  <div className="tile">
-                    <h3 className="max-w-xl py-12 mx-auto text-xl text-center">{mainpitch.description}</h3>
-                  </div>
-                </div>
                 <div className="hidden columns">
                   <div className="column is-12">
                     <h3 className="py-12 text-3xl text-center has-text-weight-semibold is-size-2">
                       {heading}
                     </h3>
-                    <p className="max-w-xl py-12 mx-auto text-xl text-center">{description}</p>
+                    <p className="max-w-xl py-12 mx-auto text-xl text-center">
+                      {description}
+                    </p>
                   </div>
                 </div>
                 {/*<Features gridItems={intro.blurbs} />*/}
@@ -62,8 +69,8 @@ export const IndexPageTemplate = ({
                   </div>
                 </div>
                 <div className="column is-12">
-                  <h3 className="py-12 text-3xl text-center">
-                    Guia de plantas
+                  <h3 className="py-12 text-6xl font-bold text-center">
+                    Guía de plantas
                   </h3>
                   <BlogRoll />
                   <div className="flex items-center justify-center h-64 bg-gray-200">

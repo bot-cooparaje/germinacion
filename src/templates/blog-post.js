@@ -22,15 +22,15 @@ export const BlogPostTemplate = ({
       <div className="container max-w-2xl mx-auto content">
         <div className="mt-12">
           <div className="prose md:prose-xl column is-10 is-offset-1">
-            <h1 className="font-mono text-4xl">
+            <h1 className="font-serif text-4xl">
               {title}
             </h1>
-            <p>{description}</p>
+            <p className="text-xl font-bold ">{description}</p>
             <PostContent content={content} />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
+                <h4>{title} - Virtudes </h4>
+                <ul className="text-xl taglist">
                   {tags.map((tag) => (
                     <li key={tag + `tag`}>
                       <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>

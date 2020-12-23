@@ -3,9 +3,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      sans: ['Merriweather Sans', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
-      mono: ['Fruktur', 'mono'],
+      sans: ['Alegreya Sans', 'sans-serif'],
+      serif: ['Alegreya', 'serif'],
+      mono: ['Alegreya Sans SC', 'sans-serif'],
+
     },
     extend: {},
   },
