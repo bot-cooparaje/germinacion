@@ -2,6 +2,7 @@
 templateKey: about-page
 path: /about
 title: Por sobre nosotros
+descripcion: Somos las plantas, los "yuyos", las hierbas. Damos el aire, vivimos naturalmente de la tierra, del agua y del sol.
 ---
 ![about](/img/1d554ab47260d38a544efbee112afa0d.jpg "about")
 

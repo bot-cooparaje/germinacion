@@ -1,12 +1,66 @@
-module.exports = {
-  flags: {
-    PRESERVE_WEBPACK_CACHE: true,
-    PRESERVE_FILE_DOWNLOAD_CACHE: true,
-    FAST_DEV: true,
-    FAST_REFRESH: true,
-    LAZY_IMAGES: true,
-    QUERY_ON_DEMAND: true,
+
+
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
+const striptags = require("striptags")
+
+// gatsby-config.js
+const blogQuery  = `  {
+  allMarkdownRemark {
+    nodes {
+      objectID: id
+      frontmatter {
+        title
+        description
+      }
+      fields {
+        slug
+      }
+      html
+    }
+  }
+}`;
+
+const queries = [
+  {
+    query: blogQuery,
+    transformer: ({ data }) => {
+      // 1. Break each post into an array of searchable text chunks.
+      // 2. return a flattened array of all indices
+      return data.allMarkdownRemark.nodes.reduce((indices, post) => {
+        // 1. description (if it exists)
+        // 2. Each paragraph
+
+        const pChunks = striptags(post.html, [], "XXX_SPLIT_HERE_XXX").split(
+          "XXX_SPLIT_HERE_XXX"
+        )
+
+        const chunks = pChunks.map(chnk => ({
+          slug: post.fields.slug,
+          title: post.frontmatter.title,
+          excerpt: chnk,
+        }))
+
+        if (post.frontmatter.description) {
+          chunks.push({
+            slug: post.fields.slug,
+            title: post.frontmatter.title,
+            excerpt: post.frontmatter.description,
+          })
+        }
+
+        const filtered = chunks.filter(chnk => !!chnk.excerpt)
+
+        return [...indices, ...filtered]
+      }, [])
+    },
   },
+]
+
+module.exports = {
+
   siteMetadata: {
     title: "Gatsby + Netlify CMS Starter",
     description:
@@ -69,20 +123,19 @@ module.exports = {
             },
           },
           {
-            resolve: "gatsby-remark-images",
+            resolve: `gatsby-remark-images`,
             options: {
-              // It's important to specify the maxWidth (in pixels) of
-              // the content container as this plugin uses this as the
-              // base for generating different widths of each image.
-              maxWidth: 2048,
+              maxWidth: 590,
             },
           },
           {
-            resolve: "gatsby-remark-copy-linked-files",
+            resolve: `gatsby-remark-responsive-iframe`,
             options: {
-              destinationDir: "static",
+              wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
+          `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-smartypants`,
         ],
       },
     },
@@ -90,6 +143,17 @@ module.exports = {
       resolve: "gatsby-plugin-netlify-cms",
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
+      },
+    },
+    {
+      // This plugin must be placed last in your list of plugins to ensure that it can query all the GraphQL data
+      resolve: `gatsby-plugin-algolia`,
+      options: {
+        appId: process.env.ALGOLIA_APP_ID,
+        apiKey: process.env.ALGOLIA_API_KEY,
+        indexName: process.env.ALGOLIA_INDEX_NAME,
+        queries,
+        chunkSize: 1000,
       },
     },
     {
