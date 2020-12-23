@@ -5,22 +5,18 @@ title: Por sobre nosotros
 ---
 ![about](/img/1d554ab47260d38a544efbee112afa0d.jpg "about")
 
-### Shade-grown coffee
+Somos las plantas, los "yuyos", las hierbas. Damos el aire, vivimos naturalmente de la tierra, del agua y del sol.
 
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+Existimos en silencio como ejemplo, para enseñar a vivir en armonia en sistemas grandes y pequeños. Desde lo mas complejo hasta lo mas simple producimos la mayor fuente de riqueza de este planeta.
 
-### Single origin
+Crecemos en direcciones opuestas, atraidas tanto por la gravedad como por la luz. Crecemos espinas para protegernos y flores para compartirnos.
 
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
+Representamos el ciclo de la vida. Somos semilla, árbol, flor, fruto y semilla...
 
-### Sustainable farming
+Somos simplemente la fuerza que mantiene vivo el espiritu creador del universo.
 
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
+Esta aplicación está inspirada en el libro Germinación del camino el cual puede ser descargado de manera gratuita. La propiedad intelectual es colectiva por lo que se otorga el derecho a leer, compartir, distribuir de manera solidaria.
 
-### Direct sourcing
+[Descargar version en pdf del libro](https://issuu.com/juan3109/docs/adriana_marcus_-_germinaci__n_del_c)
 
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
-
-### Reinvest profits
-
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+El contenido está protegido por sus lectores, sin cuya participación este material no tiene sentido alguno. Se ruega tratar este volumen con el respeto que sus protagonistas, las plantas, y sus destinatarios, ls lectors, merecen.
