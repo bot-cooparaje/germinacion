@@ -11,20 +11,23 @@ tags:
   - tónicas
   - tranquilizantes
 ---
+#### Cuidados especiales
 
-
-**Parte usada: Flor, Hojas (menos concentración de remedio)**
+* Por ser emenagoga (produce la menstruación), es abortiva (estimulante uterino: no usar en el enbarazo)
+* El aceite esencial es neurotóxico. Puede provocar reacciones alérgicas en personas sensibles.
 
 ![lavanda](/img/lavanda.jpg "lavanda")
 
-### para qué problema se usa
+> **Parte usada: Flor, Hojas (menos concentración de remedio)**
 
-#### uso externo
+### Para qué problema se usa
+
+#### Uso externo
 
 * Para dolor de cabeza, picaduras de insectos, piojos, dolor de muelas, reuma, antiséptico, cicatrizante, mal aliento.
 * Esguinces, golpes, tirones musculares, gota.
 
-#### uso interno
+#### Uso interno
 
 * Para ataque de hígado (es colerético y colagogo) combinada con manzanilla.
 * Hipotensor
@@ -37,21 +40,21 @@ tags:
 * Parásitos
 * Atraso menstrual
 
-### preparación y modo de uso
+### Preparación y modo de uso
 
-#### uso externo
+#### Uso externo
 
 * Paños fríos de cocimiento en la frente
 * Loción para fricciones.
 * Buches de cocimiento para dolor de muelas
 
-#### uso interno
+#### Uso interno
 
 * Té 2 veces por día
 * Jarabe
 * Tintura
 
-### otros usos
+### Otros usos
 
 * Aromaterapia para sedar, para dormirse.
 * Antipolilla y repelente de moscas y mosquitos
@@ -60,8 +63,3 @@ tags:
 * Aromatiza comidas (hojas o semillas)
 * En industria farmacéutica: corrector de olor.
 * En homeopatía
-
-#### cuidados especiales
-
-* Por ser emenagoga (produce la menstruación), es abortiva (estimulante uterino: no usar en el enbarazo)
-* El aceite esencial es neurotóxico. Puede provocar reacciones alérgicas en personas sensibles.
