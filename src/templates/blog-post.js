@@ -19,7 +19,7 @@ export const BlogPostTemplate = ({
   return (
     <section className="section">
       {helmet || ''}
-      <div className="container max-w-2xl mx-auto content">
+      <div className="max-w-2xl px-6 mx-auto  content">
         <div className="mt-12">
           <div className="prose md:prose-xl column is-10 is-offset-1">
             <h1 className="font-serif text-4xl">

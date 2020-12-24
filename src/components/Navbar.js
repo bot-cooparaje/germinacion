@@ -61,7 +61,7 @@ const Navbar = class extends React.Component {
           </div>
           <div
             id="navMenu"
-            className={`flex w-full py-5 ${this.state.navBarActiveClass}`}
+            className={`hidden md:flex w-full py-5 ${this.state.navBarActiveClass}`}
           >
             <div className="flex justify-end flex-1 w-full">
               <Link className="mr-4 text-xl" to="/search">

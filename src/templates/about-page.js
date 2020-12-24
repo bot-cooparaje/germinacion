@@ -13,7 +13,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
         <div className="">
           <div className="prose lg:prose-xl">
             <div className="section">
-              <h2 className="font-mono">
+              <h2 className="font-serif">
                 {title}
               </h2>
               <PageContent className="content" content={content} />

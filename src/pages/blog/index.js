@@ -13,10 +13,8 @@ export default class BlogIndexPage extends React.Component {
           </h1>
         </div>
         <section className="max-w-6xl mx-auto section">
-          <div className="container">
-            <div className="content">
-              <BlogRoll />
-            </div>
+          <div className="content">
+            <BlogRoll />
           </div>
         </section>
       </Layout>

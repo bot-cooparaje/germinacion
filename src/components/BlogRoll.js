@@ -4,6 +4,7 @@ import { Link, graphql, StaticQuery } from "gatsby";
 import PreviewCompatibleImage from "./PreviewCompatibleImage";
 import styled from "@emotion/styled"
 import tw from "twin.macro"
+import Img from 'gatsby-image'
 
 class BlogRoll extends React.Component {
   render() {
@@ -16,23 +17,18 @@ class BlogRoll extends React.Component {
           posts.map(({ node: post }) => (
             <div key={post.id}>
               <article
-                className={`blog-list-item tile shadow-xl py-3  is-child box notification ${
+                className={`blog-list-item tile bg-white shadow-xl py-3  is-child box notification ${
                   post.frontmatter.featuredpost ? "is-featured" : ""
                 }`}
               >
                 <header>
                   {post.frontmatter.featuredimage ? (
-                    <Link to={post.fields.slug} className="relative block w-full h-40 overflow-hidden featured-thumbnail">
-                      <PreviewCompatibleImage
-                        imageInfo={{
-                          image: post.frontmatter.featuredimage,
-                          alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                        }}
-                      />
+                    <Link to={post.fields.slug} className="relative items-center justify-center w-full h-40 overflow-hidden featured-thumbnail">
+                      <Img className="object-cover w-full h-64 transition-all duration-150 transform " fluid={post.frontmatter.featuredimage.childImageSharp.fluid} alt={post.frontmatter.title} />
                     </Link>
                   ) : null}
                   <p className="my-2 text-center post-meta">
-                    <Link className="font-sans text-3xl font-black text-green-500 hover:underline " to={post.fields.slug}>
+                    <Link className="font-sans text-xl font-black text-gray-800 hover:underline " to={post.fields.slug}>
                       {post.frontmatter.title}
                     </Link>
                     <span> &bull; </span>
@@ -107,4 +103,21 @@ export default () => (
 
 const Container = styled.div`
   ${tw`grid gap-6 my-12 md:grid-cols-5 `}
+
+  .featured-thumbnail  {
+    ${tw`transition-all duration-200 transform`}
+
+    
+
+    img {
+      ${tw`transition-all duration-200 transform`}
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.05);
+      }
+    }
+
+  }
 `
