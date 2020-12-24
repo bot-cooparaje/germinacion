@@ -9,17 +9,17 @@ description: Subarbusto perenne aromático de hasta 40 cm de alto, con tallos
 featuredpost: true
 featuredimage: /img/tomillo.jpg
 tags:
-  - tónicas
+  - tónica
   - antibiótica
   - antibacteriana
-  - antiespasmódicas
-  - antiflatulentas
+  - antiespasmódica
+  - antiflatulenta
   - antimicótica
   - antiparasitaria
   - antitusivos
   - expectorante
   - hepatobiliares
-  - inmunoestimulantes
+  - inmunoestimulante
 ---
 **Parte usada: Flores, hojas, tallos**
 
