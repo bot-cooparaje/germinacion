@@ -6,12 +6,15 @@ const striptags = require("striptags");
 
 // gatsby-config.js
 const blogQuery = `  {
-  allMarkdownRemark {
+  allMarkdownRemark(filter: {frontmatter: {featuredpost: {eq: true}}}) {
     nodes {
       objectID: id
       frontmatter {
         title
         description
+        featuredimage {
+          relativePath
+        }
       }
       fields {
         slug
@@ -38,7 +41,7 @@ const queries = [
         const chunks = pChunks.map((chnk) => ({
           slug: post.fields.slug,
           title: post.frontmatter.title,
-          image: post.frontmatter.featuredimage,
+          image: post.frontmatter.featuredimage.relativePath,
           excerpt: chnk,
         }));
 
@@ -47,7 +50,7 @@ const queries = [
             slug: post.fields.slug,
             title: post.frontmatter.title,
             excerpt: post.frontmatter.description,
-            image: post.frontmatter.featuredimage,
+            image: post.frontmatter.featuredimage.relativePath,
           });
         }
 

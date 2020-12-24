@@ -17,7 +17,7 @@ const BuscarComponent = () => {
     <>
       <Layout>
         <SearchContainer>
-          <div className="max-w-xl p-6 pt-6 mx-auto">
+          <div className="max-w-5xl p-6 pt-6 mx-auto">
             <InstantSearch
               searchClient={searchClient}
               indexName="blog"

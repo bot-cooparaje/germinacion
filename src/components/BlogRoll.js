@@ -102,7 +102,7 @@ export default () => (
 );
 
 const Container = styled.div`
-  ${tw`grid gap-6 my-12 md:grid-cols-5 `}
+  ${tw`grid grid-cols-2 gap-6 my-12 sm:grid-cols-4 md:grid-cols-5 `}
 
   .featured-thumbnail  {
     ${tw`transition-all duration-200 transform`}

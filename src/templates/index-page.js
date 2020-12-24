@@ -58,16 +58,16 @@ export const IndexPageTemplate = ({
         </div>
       </div>
     </div>
-    <section className="w-full mx-auto bg-green-700">
+    <section className="w-full px-3 mx-auto bg-green-700">
       <div className="container max-w-6xl mx-auto">
         <div className="section">
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="max-w-6xl mx-auto content">
                 <div className="pb-24 column is-12">
-                  <h3 className="pt-24 pb-0 text-5xl font-thin text-left text-green-100">
+                  <h3 className="flex flex-col items-baseline pt-24 pb-0 text-5xl font-thin text-left text-green-100 md:flex-row">
                     Guía de plantas{" "}
-                    <small className="font-mono text-xl font-semibold">
+                    <small className="font-mono text-xl text-white md:pl-6">
                       (región norpatagónica)
                     </small>
                   </h3>
