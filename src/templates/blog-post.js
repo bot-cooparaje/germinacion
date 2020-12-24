@@ -19,9 +19,9 @@ export const BlogPostTemplate = ({
   return (
     <section className="section">
       {helmet || ''}
-      <div className="max-w-2xl px-6 mx-auto  content">
+      <div className="max-w-2xl px-6 mx-auto content">
         <div className="mt-12">
-          <div className="prose md:prose-xl column is-10 is-offset-1">
+          <div className="prose prose-lg md:prose-2xl">
             <h1 className="font-serif text-4xl">
               {title}
             </h1>
@@ -29,10 +29,10 @@ export const BlogPostTemplate = ({
             <PostContent content={content} />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
-                <h4>{title} - Virtudes </h4>
-                <ul className="text-xl taglist">
+                <h4>Virtudes</h4>
+                <ul className="text-2xl taglist">
                   {tags.map((tag) => (
-                    <li key={tag + `tag`}>
+                    <li key={tag + `tag`} className="capitalize">
                       <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
                     </li>
                   ))}

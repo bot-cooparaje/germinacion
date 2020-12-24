@@ -8,10 +8,10 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <section className="max-w-2xl mx-auto">
+    <section className="max-w-2xl px-6 mx-auto">
       <div className="">
         <div className="">
-          <div className="prose lg:prose-xl">
+          <div className="prose prose-lg md:prose-2xl prose-green">
             <div className="section">
               <h2 className="font-serif">
                 {title}

@@ -21,6 +21,7 @@ const PostPreview = ({ hit }) => {
         <p>
           <Highlight hit={hit} attribute="excerpt" tagName="mark" />
         </p>
+
       </Content>
       <Image>
         <Link to={hit.slug}>
@@ -62,3 +63,5 @@ const Content = styled.div`
   ${tw`relative z-20 w-full p-2 px-3 pr-2 md:pr-56`}
   flex: 1
 `;
+
+

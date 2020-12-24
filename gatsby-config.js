@@ -15,6 +15,7 @@ const blogQuery = `  {
         featuredimage {
           relativePath
         }
+        tags
       }
       fields {
         slug
@@ -42,6 +43,7 @@ const queries = [
           slug: post.fields.slug,
           title: post.frontmatter.title,
           image: post.frontmatter.featuredimage.relativePath,
+          tags: post.frontmatter.tags,
           excerpt: chnk,
         }));
 
@@ -50,6 +52,7 @@ const queries = [
             slug: post.fields.slug,
             title: post.frontmatter.title,
             excerpt: post.frontmatter.description,
+            tags: post.frontmatter.tags,
             image: post.frontmatter.featuredimage.relativePath,
           });
         }

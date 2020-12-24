@@ -36,12 +36,12 @@ class TagRoute extends React.Component {
 
     return (
       <Layout>
-        <section className="section">
+        <section className="min-h-screen bg-green-900 section">
           <Helmet title={`${tag} | ${title}`} />
-          <div className="max-w-6xl mx-auto content">
+          <div className="max-w-5xl mx-auto content">
             <div className="columns">
               <div
-                className="p-6 mt-6 bg-white shadow-lg column is-10 is-offset-1"
+                className="p-6 mt-6 bg-white shadow-lg "
                 style={{ marginBottom: "6rem" }}
               >
                 <h3 className="text-3xl text-center text-gray-900 ">

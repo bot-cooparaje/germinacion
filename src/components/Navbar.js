@@ -75,7 +75,7 @@ const Navbar = class extends React.Component {
                 Plantas
               </Link>
               <Link className="mr-4 text-xl" to="/about">
-                Sobre nosotres
+                Sobre nosotros
               </Link>
             </div>
           </div>
