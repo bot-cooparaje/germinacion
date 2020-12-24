@@ -21,9 +21,20 @@ tags:
   - hepatobiliares
   - inmunoestimulante
 ---
-> **Parte usada: Flores, hojas, tallos**
+#### Cuidados especiales
+
+* Secar rápido sin apelmazar a la sombra y en lugar ventilado
+* No abusar los hipertiroideos (puede desencadenar su aceite esencial crisis tiroidea) Estimulante uterino: usar la planta con moderación.
+* El aceite esencial es tóxico hepático, renal y del SNC, por eso no usar los aceites esenciales, sino la planta fresca o seca.
+* Figura en la Farmacopea argentina, y de muchos otros países
+
+
 
 ![tomillo](/img/tomillo.jpg "tomillo")
+
+> **Parte usada: Flores, hojas, tallos**
+
+
 
 ### Para qué problema se usa
 
@@ -68,8 +79,3 @@ tags:
 * Cosmético, dentífrico, jabón, sales y espumas de baño
 * Es melífera
 * Sahumar en incienso para ahuyentar mosquitos Licores Con su aceite los egipcios embalsamaban sus momias En la Edad Media se usaba para expulsar la placenta y los fetos muertos.
-
-#### Cuidados especiales
-
-* Secar rápido sin apelmazar a la sombra y en lugar ventilado
-* No abusar los hipertiroideos (puede desencadenar su aceite esencial crisis tiroidea) Estimulante uterino: usar la planta con moderación El aceite esencial es tóxico hepático, renal y del SNC, por eso no usar los aceites esenciales, sino la planta fresca o seca. Figura en la Farmacopea argentina, y de muchos otros países
