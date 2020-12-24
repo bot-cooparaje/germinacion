@@ -14,6 +14,14 @@ tags:
   - halitosis
   - hepatobiliares
 ---
+#### Cuidados especiales
+
+* Si al secar las hojas se oscurecen, no sirven.
+* No usar en el embarazo (es emenagoga y abortiva)
+* No en niños menores de 5 años (puede dar broncoespasmos)
+* Baja la producción de leche.
+* No usar su aceite esencial (puede producir arritmias)
+
 ![menta](/img/menta.jpg "menta")
 
 ### para qué problema se usa
@@ -50,11 +58,3 @@ tags:
 * Alimentos: condimento de carnes, salsas, ensaladas, etc.
 * Repelente de insectos
 * Para la cultura árabe simboliza el amor y la amistad
-
-#### cuidados especiales
-
-* Si al secar las hojas se oscurecen, no sirven.
-* No usar en el embarazo (es emenagoga y abortiva)
-* No en niños menores de 5 años (puede dar broncoespasmos)
-* Baja la producción de leche.
-* No usar su aceite esencial (puede producir arritmias)
