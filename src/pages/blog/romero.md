@@ -23,15 +23,24 @@ tags:
   - hepatobiliares
   - hipertensoras
 ---
-**Parte usada: Hojas y flores**
+#### Cuidados especiales
+
+* Los hipertensos, tomar poco
+* Es abortiva
+* En altas dosis es tóxico (los aceites esenciales son neurotóxicos)
+* Puede producir dermatitis de contacto en personas alérigcas
+
+
 
 ![romero](/img/romero.jpg "romero")
 
 
 
-### para qué problema se usa
+> **Parte usada: Hojas y flores**
 
-#### uso externo
+### Para qué problema se usa
+
+#### Uso externo
 
 * Relajante muscular
 * Caída de cabello, seborrea
@@ -41,7 +50,7 @@ tags:
 * Reuma
 * Flujo vaginal
 
-#### uso interno
+#### Uso interno
 
 * Dolor de estómago
 * Digestivo (combinar con limón), colagogo, aperitivo, hepatoprotector por acción de ácido fenólico
@@ -54,9 +63,9 @@ tags:
 * Diurético
 * Baja el colesterol
 
-### preparación y modo de uso
+### Preparación y modo de uso
 
-#### uso externo
+#### Uso externo
 
 * Fricciones con la maceración alcohólica para crecimiento del cabello
 * Asociado a ruda para piojos
@@ -67,12 +76,12 @@ tags:
 * Shampú (caída de cabello)
 * Ungüento para sarna (asociado con ruda y azufre, aplicar 10 noches seguidas) o reuma (con alcanfor)
 
-#### uso interno
+#### Uso interno
 
 * Infusión
 * Inhalación
 
-### otros usos
+### Otros usos
 
 * Condimento (buen conservante de carnes)
 * Jabones, perfumes, sales de baño, desodorantes
@@ -83,10 +92,3 @@ tags:
 * Melífera
 * Ornamental
 * Aromaterapia
-
-#### cuidados especiales
-
-* Los hipertensos, tomar poco
-* Es abortiva
-* En altas dosis es tóxico (los aceites esenciales son neurotóxicos)
-* Puede producir dermatitis de contacto en personas alérigcas
