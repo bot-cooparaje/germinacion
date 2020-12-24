@@ -172,6 +172,19 @@ module.exports = {
         // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
       },
     },
-    "gatsby-plugin-netlify", // make sure to keep it last in the array
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Germinación`,
+        short_name: `germinación`,
+        start_url: `/`,
+        background_color: `#1A7A43`,
+        theme_color: `#1A7A43`,
+        display: `standalone`,
+        icon: `src/img/gatsby-icon.png`, 
+      },
+    },
+    "gatsby-plugin-netlify", 
+    `gatsby-plugin-offline`,
   ],
 };
