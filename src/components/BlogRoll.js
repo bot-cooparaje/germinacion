@@ -2,9 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql, StaticQuery } from "gatsby";
 //import PreviewCompatibleImage from "./PreviewCompatibleImage";
-import styled from "@emotion/styled"
-import tw from "twin.macro"
-import Img from 'gatsby-image'
+import styled from "@emotion/styled";
+import tw from "twin.macro";
+import Img from "gatsby-image";
 
 class BlogRoll extends React.Component {
   render() {
@@ -17,34 +17,41 @@ class BlogRoll extends React.Component {
           posts.map(({ node: post }) => (
             <div key={post.id}>
               <article
-                className={`blog-list-item tile bg-white shadow-xl py-3  is-child box notification ${
+                className={`blog-list-item bg-white shadow-xl pb-3 ${
                   post.frontmatter.featuredpost ? "is-featured" : ""
                 }`}
               >
                 <header>
                   {post.frontmatter.featuredimage ? (
-                    <Link to={post.fields.slug} className="relative items-center justify-center w-full h-40 overflow-hidden featured-thumbnail">
-                      <Img className="object-cover w-full h-64 transition-all duration-150 transform " fluid={post.frontmatter.featuredimage.childImageSharp.fluid} alt={post.frontmatter.title} />
+                    <Link
+                      to={post.fields.slug}
+                      className="relative items-center justify-center block w-full h-64 overflow-hidden image"
+                    >
+                      <Img
+                        className="object-cover w-full h-64 transition-all duration-150 transform "
+                        fluid={
+                          post.frontmatter.featuredimage.childImageSharp.fluid
+                        }
+                        alt={post.frontmatter.title}
+                      />
                     </Link>
                   ) : null}
                   <p className="my-2 text-center post-meta">
-                    <Link className="font-sans text-xl font-black text-gray-800 hover:underline " to={post.fields.slug}>
+                    <Link
+                      className="font-sans text-xl font-black text-gray-800 hover:underline "
+                      to={post.fields.slug}
+                    >
                       {post.frontmatter.title}
                     </Link>
                     <span> &bull; </span>
                   </p>
-                  <span className="hidden">
-                    {post.frontmatter.date}
-                  </span>
+                  <span className="hidden">{post.frontmatter.date}</span>
                 </header>
                 <p className="hidden mb-3 font-serif text-lg font-bold prose">
                   {post.frontmatter.description}
-                  <br />
                   <Link className="button" to={post.fields.slug}>
                     Seguir leyendo →
                   </Link>
-                  <br />
-
                 </p>
               </article>
             </div>
@@ -73,7 +80,7 @@ export default () => (
           edges {
             node {
               excerpt(pruneLength: 80)
-              
+
               id
               fields {
                 slug
@@ -104,20 +111,16 @@ export default () => (
 const Container = styled.div`
   ${tw`grid grid-cols-2 gap-6 my-12 sm:grid-cols-4 md:grid-cols-5 `}
 
-  .featured-thumbnail  {
-    ${tw`transition-all duration-200 transform`}
+     
 
-    
-
-    img {
-      ${tw`transition-all duration-200 transform`}
-    }
-
-    &:hover {
-      img {
-        transform: scale(1.05);
-      }
-    }
-
+  .gatsby-image-wrapper {
+    ${tw`relative h-full transition-all duration-500 ease-in-out transform bg-red-500`} 
   }
-`
+
+
+  .blog-list-item:hover {
+    .gatsby-image-wrapper {
+      transform: scale(1.05);
+    }
+  }
+`;
