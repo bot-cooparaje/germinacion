@@ -28,13 +28,9 @@ tags:
 * El aceite esencial es tóxico hepático, renal y del SNC, por eso no usar los aceites esenciales, sino la planta fresca o seca.
 * Figura en la Farmacopea argentina, y de muchos otros países
 
-
-
 ![tomillo](/img/tomillo.jpg "tomillo")
 
 > **Parte usada: Flores, hojas, tallos**
-
-
 
 ### Para qué problema se usa
 
@@ -50,7 +46,7 @@ tags:
 * Tos, expectorante antitusivo, para la tos convulsa, el asma, la sinusitis, rinitis, angina, otitis, por ser antiséptico, antibiótico y expectorante
 * Carminativo (gases)
 * Parásitos (oxiuros, áscaris, anquilostoma)
-* Digestivo, para la inapetencia antes de comer, para las digestiones difíciles después de comer, es antiespasmódico, también para cólicos intestinales y menstruaciones dulorosas
+* Digestivo, para la inapetencia antes de comer, para las digestiones difíciles después de comer, es antiespasmódico, también para cólicos intestinales y menstruaciones dolorosas
 * Diurético
 * Estimulante inmunitario (contiene Zinc), se usa en infecciones crónicas, cansancio.
 * Calorífico (en enfriamientos)
