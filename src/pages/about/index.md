@@ -2,10 +2,9 @@
 templateKey: about-page
 path: /about
 title: Por sobre nosotros
-descripcion: Somos las plantas, los "yuyos", las hierbas. Damos el aire, vivimos naturalmente de la tierra, del agua y del sol.
+descripcion: Somos las plantas, los "yuyos", las hierbas. Damos el aire, vivimos
+  naturalmente de la tierra, del agua y del sol.
 ---
-![about](/img/1d554ab47260d38a544efbee112afa0d.jpg "about")
-
 Somos las plantas, los "yuyos", las hierbas. Damos el aire, vivimos naturalmente de la tierra, del agua y del sol.
 
 Existimos en silencio como ejemplo, para enseñar a vivir en armonia en sistemas grandes y pequeños. Desde lo mas complejo hasta lo mas simple producimos la mayor fuente de riqueza de este planeta.
