@@ -5,15 +5,7 @@ title: Por sobre nosotros
 descripcion: Somos las plantas, los "yuyos", las hierbas. Damos el aire, vivimos
   naturalmente de la tierra, del agua y del sol.
 ---
-Somos las plantas, los "yuyos", las hierbas. Damos el aire, vivimos naturalmente de la tierra, del agua y del sol.
-
-Existimos en silencio como ejemplo, para enseñar a vivir en armonia en sistemas grandes y pequeños. Desde lo mas complejo hasta lo mas simple producimos la mayor fuente de riqueza de este planeta.
-
-Crecemos en direcciones opuestas, atraidas tanto por la gravedad como por la luz. Crecemos espinas para protegernos y flores para compartirnos.
-
-Representamos el ciclo de la vida. Somos semilla, árbol, flor, fruto y semilla...
-
-Somos simplemente la fuerza que mantiene vivo el espiritu creador del universo.
+### Inspiración
 
 Esta aplicación está inspirada en el libro Germinación del camino el cual puede ser descargado de manera gratuita. La propiedad intelectual es colectiva por lo que se otorga el derecho a leer, compartir, distribuir de manera solidaria.
 
