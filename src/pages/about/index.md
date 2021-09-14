@@ -5,6 +5,8 @@ title: Por sobre nosotros
 descripcion: Somos las plantas, los "yuyos", las hierbas. Damos el aire, vivimos
   naturalmente de la tierra, del agua y del sol.
 ---
+![planeta tierra](/img/the-new-york-public-library-yeauzezu6xo-unsplash.jpg "planeta tierra")
+
 ### Inspiración
 
 Esta aplicación está inspirada en el libro Germinación del camino el cual puede ser descargado de manera gratuita. La propiedad intelectual es colectiva por lo que se otorga el derecho a leer, compartir, distribuir de manera solidaria.
